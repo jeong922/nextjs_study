@@ -1,7 +1,8 @@
+import { getProducts } from '@/service/products';
 import Link from 'next/link';
 import React from 'react';
 
-const products = ['shirt', 'pants', 'skirt', 'shoes'];
+const products = getProducts();
 
 export default function ProductsPage() {
   return (

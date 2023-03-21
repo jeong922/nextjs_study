@@ -1,4 +1,4 @@
-import { Product } from './../../../service/products';
+import { Product } from '../../../service/products';
 import { getProducts } from '@/service/products';
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';

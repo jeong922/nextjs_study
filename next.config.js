@@ -11,6 +11,26 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/products/deleted_forever',
+        destination: '/products',
+        permanent: true,
+      },
+      {
+        source: '/products/deleted_temp',
+        destination: '/products',
+        permanent: false,
+      },
+    ];
+  },
+  async rewrites() {
+    return [
+      { source: '/jeong', destination: '/about/me/jeong' },
+      { source: '/items/:slug', destination: '/products/:slug' },
+    ];
+  },
 };
 
 module.exports = nextConfig;
